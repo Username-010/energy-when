@@ -1,0 +1,11 @@
+{
+  "domain": "energy_when",
+  "name": "Energy When",
+  "codeowners": ["@Username-010"],
+  "config_flow": true,
+  "documentation": "https://github.com/Username-010/energy-when",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/Username-010/energy-when/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}

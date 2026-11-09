@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Energy When",
+        "description": "Pick your dynamic price sensor (EnergyZero / Nordpool / Tibber) and optional solar sensors. The card then shows the cheapest window including free solar.",
+        "data": {
+          "name": "Name",
+          "price_sensor": "Price sensor (needs a Prices / prices attribute)",
+          "all_in_sensor": "All-in price now (optional, used to learn the surcharge)",
+          "surcharge": "Surcharge on top of market price (€/kWh)",
+          "solar_now": "Solar power now (W)",
+          "solar_remaining": "Solar energy remaining today (kWh)",
+          "solar_tomorrow": "Solar energy tomorrow (kWh)",
+          "house_power": "House net power (P1, W — negative = export)",
+          "duration_h": "How long the load runs",
+          "appliance_w": "Average power of the load",
+          "base_load_w": "Typical house load besides this appliance"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "best_start": { "name": "Best start" },
+      "best_cost": { "name": "Cost at best start" },
+      "now_cost": { "name": "Cost if started now" },
+      "savings": { "name": "Savings vs now" },
+      "plan": { "name": "Plan" }
+    },
+    "binary_sensor": {
+      "good_time": { "name": "Good time to run" }
+    }
+  }
+}

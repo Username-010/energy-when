@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Energy When",
+        "description": "Kies je dynamische prijssensor (EnergyZero / Nordpool / Tibber) en optioneel zon. De kaart toont het goedkoopste blok, met gratis zon meegerekend.",
+        "data": {
+          "name": "Naam",
+          "price_sensor": "Prijssensor (met Prices / prices attribuut)",
+          "all_in_sensor": "All-in prijs nu (optioneel, voor de opslag)",
+          "surcharge": "Opslag bovenop marktprijs (€/kWh)",
+          "solar_now": "Zonvermogen nu (W)",
+          "solar_remaining": "Zonenergie rest van vandaag (kWh)",
+          "solar_tomorrow": "Zonenergie morgen (kWh)",
+          "house_power": "Huis netto vermogen (P1, W — negatief = terugleveren)",
+          "duration_h": "Hoe lang het apparaat draait",
+          "appliance_w": "Gemiddeld vermogen van het apparaat",
+          "base_load_w": "Typisch huisverbruik naast dit apparaat"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "best_start": { "name": "Beste start" },
+      "best_cost": { "name": "Kosten op beste moment" },
+      "now_cost": { "name": "Kosten als je nu start" },
+      "savings": { "name": "Besparing t.o.v. nu" },
+      "plan": { "name": "Plan" }
+    },
+    "binary_sensor": {
+      "good_time": { "name": "Goed moment om te draaien" }
+    }
+  }
+}
